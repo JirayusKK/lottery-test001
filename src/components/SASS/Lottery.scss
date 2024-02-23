@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+$bg-color: black; 
+
+.lotter {
+  .lotter_con {
+    .lotter_Diver {
+      display: gird;
+      grid-template-rows: repeat(7, 1fr);
+      grid-template-columns: repeat((4, 1fr));
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+      font-family: 'Mitr', sans-serif;
+      font-weight: 200;
+
+      .lotter_rnd {
+        letter-spacing: 0.1rem;
+        grid-area: 1 / 1 / 2 / 9;
+        background-image: linear-gradient(rgba(255, 164, 46, 255), white);
+        padding-bottom: 20px;
+        padding-top: 40px;
+        margin-top: 0;
+
+        p {
+          font-size: 40px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          letter-spacing: 0.2rem;
+          background-color: transparent;
+          margin: 0 auto 10px auto;
+        }
+
+        p2 {
+          font-size: 30px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          letter-spacing: 0.1rem;
+          background-color: transparent;
+          margin: 0 auto 30px auto;
+        }
+
+        .rnd_btn {
+          font-family: 'Mitr', sans-serif;
+          letter-spacing: 0.1rem;
+          padding: 20px 30px;
+          border-radius: 10px;
+          border: 2px solid rgba(242, 129, 45, 255);
+          color: white;
+          background-color: rgba(242, 129, 45, 255);
+          font-size: 20px;
+          l &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .lotter_items {
+        font-family: 'Mitr', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        justify-content: center;
+        align-items: center;
+
+        .stprize_con {
+          width: 50%;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+          font-size: 17px;
+          font-weight: 500;
+
+          .stword {
+            width: 100%;
+            text-align: center;
+            grid-area: 2 / 1 / 3 / 5;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: white;
+            background-color: rgba(242, 129, 45, 255);
+          }
+          .stprize {
+            width: 100%;
+            height: 27px;
+            grid-area: 2 / 5 / 3 / 9;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: rgba(242, 129, 45, 255);
+            background-color: transparent;
+          }
+        }
+
+        .cstprize_con {
+          width: 50%;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+          font-size: 17px;
+          font-weight: 500;
+
+          .cstword {
+            width: 100%;
+            text-align: center;
+            grid-area: 3 / 1 / 4 / 5;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: white;
+            background-color: rgba(242, 129, 45, 255);
+          }
+
+          .cstprize1 {
+            width: 100%;
+            height: 27px;
+            grid-area: 3 / 1 / 4 / 5;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: rgba(242, 129, 45, 255);
+            background-color: transparent;
+          }
+
+          .cstprize2 {
+            width: 100%;
+            height: 27px;
+            grid-area: 3 / 7 / 4 / 9;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: rgba(242, 129, 45, 255);
+            background-color: transparent;
+          }
+        }
+
+        .ndprize_con {
+          width: 50%;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+          font-size: 17px;
+          font-weight: 500;
+
+          .ndprizeword {
+            width: 100%;
+            height: 27px;
+            grid-area: 4 / 1 / 5 / 3;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: white;
+            background-color: rgba(242, 129, 45, 255);
+          }
+
+          .ndprize1 {
+            width: 100%;
+            height: 27px;
+            grid-area: 4 / 3 / 5 / 5;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: rgba(242, 129, 45, 255);
+            background-color: transparent;
+          }
+
+          .ndprize2 {
+            width: 100%;
+            height: 27px;
+            grid-area: 4 / 5 / 5 / 7;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: rgba(242, 129, 45, 255);
+            background-color: transparent;
+          }
+
+          .ndprize3 {
+            width: 100%;
+            height: 27px;
+            grid-area: 4 / 7 / 5 / 9;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: rgba(242, 129, 45, 255);
+            background-color: transparent;
+          }
+        }
+
+        .twoprize_con {
+          width: 50%;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+          font-size: 17px;
+          font-weight: 500;
+
+          .twoprizeword {
+            width: 100%;
+            grid-area: 5 / 1 / 6 / 5;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: white;
+            background-color: rgba(242, 129, 45, 255);
+          }
+
+          .twoprize {
+            width: 100%;
+            height: 27px;
+            grid-area: 5 / 5 / 6 / 9;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(242, 129, 45, 255);
+            color: rgba(242, 129, 45, 255);
+            background-color: transparent;
+          }
+        }
+      }
+
+      .lotter_check {
+        .lotter_check_con {
+          grid-area: 6 / 1 / 7 / 9;
+          display: block;
+          letter-spacing: 0.1rem;
+
+          p {
+            font-family: 'Mitr', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+          }
+
+          .form_control {
+            font-size: 17px;
+            font-family: 'Mitr', sans-serif;
+            padding: 5px 40px;
+            border-radius: 10px;
+          }
+
+          .btn_check {
+            display: flex;
+            margin: 10px auto;
+            padding: 10px 40px;
+            font-family: 'Mitr', sans-serif;
+            font-size: 20px;
+            letter-spacing: 0.1rem;
+            border-radius: 10px;
+            background-color: rgba(242, 129, 45, 255);
+            border: 1px solid rgba(242, 129, 45, 255);
+            color: white;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 300px;
+  color: rgba(242, 129, 45, 255);
+  border: 2px solid rgba(242, 129, 45, 255);
+  border-radius: 20px;
+  background-color: white;
+  padding: 0 50px;
+
+  .modal_box_res {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+  }
+}
+
+//----------------------lap top screen----------------------//
+
+@media screen and (max-width: 1440px) {
+  .lotter {
+    .lotter_con {
+      .lotter_Diver {
+        .lotter_items {
+          .stprize_con {
+            width: 60%;
+          }
+          .cstprize_con {
+            width: 60%;
+          }
+          .ndprize_con {
+            width: 60%;
+          }
+          .twoprize_con {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lotter {
+    .lotter_con {
+      .lotter_Diver {
+        .lotter_items {
+          .stprize_con {
+            width: 80%;
+          }
+          .cstprize_con {
+            width: 80%;
+          }
+          .ndprize_con {
+            width: 80%;
+          }
+          .twoprize_con {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//----------------------iPad screen----------------------//
+
+@media screen and (max-width: 820px) {
+  .lotter {
+    .lotter_con {
+      .lotter_Diver {
+        .lotter_rnd {
+          .rnd_btn {
+            font-size: 14px;
+          }
+        }
+        .lotter_items {
+          .stprize_con {
+            width: 90%;
+            font-size: 14px;
+          }
+          .cstprize_con {
+            width: 90%;
+            font-size: 14px;
+          }
+          .ndprize_con {
+            width: 90%;
+            font-size: 14px;
+          }
+          .twoprize_con {
+            width: 90%;
+            font-size: 14px;
+          }
+        }
+        .lotter_check {
+          .lotter_check_con {
+            .btn_check {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
